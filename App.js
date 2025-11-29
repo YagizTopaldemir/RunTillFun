@@ -13,10 +13,13 @@ import RTFaiScreen from './StackNavigator/RtfaiScreen';
 import Changeusername from './StackNavigator/Changeunscreen';
 import * as Notifications from 'expo-notifications';
 import Changeuserkg from './StackNavigator/changeuserkg';
+import constants from "expo-constants";
+
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
+  console.log(constants.expoConfig.extra.apiKey)
     const [loading, setLoading] = useState(true);
    const [initialRoute, setInitialRoute] = useState('OnBoarding');
   useEffect(() => {

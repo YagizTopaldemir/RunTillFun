@@ -1,8 +1,10 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import OpenAI from "openai";
+import Constants from "expo-constants";
+
 
 const client = new OpenAI({
-  apiKey: "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", 
+ apiKey: Constants.expoConfig.extra.OPENAI_KEY,
 });
 
 export const getRunAdvice = async ({ messageuser }) => {
