@@ -1,29 +1,58 @@
-{
-  "expo": {
-    "name": "RunTillFun",
-    "slug": "RunTillFun",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+  {
+    "expo": {
+      "name": "RunTillFun",
+      "slug": "RunTillFun",
+      "version": "1.0.0",
+      "orientation": "portrait",
+      "icon": "./assets/rtficon.png",
+      "userInterfaceStyle": "light",
+      "newArchEnabled": true,
+      "splash": {
+        "image": "./assets/splash-icon.png",
+        "resizeMode": "contain",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "ios": {
+        "supportsTablet": true
+      },
+      "android": {
+        "adaptiveIcon": {
+          "foregroundImage": "./assets/adaptive-icon.png",
+          "backgroundColor": "#ffffff"
+        },
+        "edgeToEdgeEnabled": true,
+        "config": {
+     
+        },
+        "permissions": [
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_COARSE_LOCATION",
+      "ACTIVITY_RECOGNITION"
+    ],
+        "package": "com.yagiz0ve1.RunTillFun"
+      },
+      "web": {
+        "favicon": "./assets/favicon.png"
+      },
+    "plugins": [
+    [
+      "expo-location",
+      {
+        "locationWhenInUsePermission": "Uygulama harita için konumunuza erişmek istiyor.",
+        "locationAlwaysAndWhenInUsePermission": "Uygulama arka planda konumunuzu takip etmek istiyor."
+      }
+    ],
+    [
+              "expo-notifications"
+        
+
+    ],
+    "expo-secure-store"
+  ],
+      "extra": {
+        "eas": {
+          "projectId": "c27c9090-1ff7-4432-8961-debc59d5ae01"
+        }
+      }
     }
   }
-}
