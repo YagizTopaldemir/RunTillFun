@@ -1,7 +1,7 @@
 <div style="
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 20px;
   justify-content: center;
 ">
   <img src="https://github.com/user-attachments/assets/67b84b1a-59db-4da2-ad96-53a695726d07" width="220">
